@@ -1,0 +1,32 @@
+[project]
+name = "first-briefs-soutenance-croiser"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "mohamed", email = "medolgholb@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "imbalanced-learn>=0.11.0",  
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "apache-airflow>=2.7.0",
+    "jupyter>=1.0.0",
+    "ipykernel>=7.3.0",
+    "numpy>=1.22,<2.4",
+    "pandas>=2.0,<3",
+    "ydata-profiling>=4.18.4",
+    "setuptools<81",
+    "scikit-learn>=1.9.1",
+    "streamlit>=1.65.0",
+    "joblib>=1.6.0",
+    
+]
+
+[project.scripts]
+first-briefs-soutenance-croiser = "first_briefs_soutenance_croiser:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
